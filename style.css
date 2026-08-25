@@ -24,8 +24,8 @@ body {
 .nav {
   font-weight: 600;
   font-size: 13px;
-  background-color: #ffffff;
-  border: none;
+  color: black;
+  text-decoration: none;
 }
 .count {
   opacity: 0.4;
