@@ -16,7 +16,9 @@ body {
 .nav-bar,
 .availability-nav,
 .lets-talk-nav,
-.lets-collab-btn {
+.lets-collab-btn,
+.socials-container,
+.social {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,17 +68,19 @@ body {
   font-size: 85px; /* 140px */
   font-weight: 700;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .profile-info-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 .profile-info {
-  margin-top: 200px;
+  position: absolute;
+  bottom: 120px;
+  left: 30px;
 }
 .profession-text {
   font-weight: 600;
@@ -88,9 +92,7 @@ body {
   color: #424242;
   margin-bottom: 18px;
 }
-.social-img {
-  width: 20px;
-}
+
 .lets-collab-btn {
   background-color: black;
   color: #ffffff;
@@ -101,4 +103,36 @@ body {
   padding: 6px 15px;
   font-weight: 500;
   font-size: 14px;
+}
+.socials-container {
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  margin-top: 200px;
+}
+.social {
+  font-size: 12px;
+  gap: 6px;
+  color: black;
+  font-weight: 500;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  margin-bottom: 15px;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(212, 212, 212, 0.1); 
+}
+.social-img {
+  width: 15px;
+  margin-left: -20px;
+}
+.img-link{
+  width: 16px;
+  margin-left: -10px;
+}
+.img-insta {
+  width: 13px;
+  margin-left:4px;
 }
