@@ -12,6 +12,11 @@ a {
 }
 body {
   background-color: #ffffff;
+  margin-bottom: 3000px;
+}
+.page1 {
+  height: 100vh;
+  overflow: hidden;
 }
 .nav-bar,
 .availability-nav,
@@ -59,28 +64,53 @@ body {
 .img-arrow {
   margin-left: 5px;
   width: 20px;
-  transform: rotate(45deg);
+}
+.name-container {
+  margin-top: 50px;
+  width: 100%;
+}
+.oulined-text {
+  width: 590px;
+  margin-top: -5px;
 }
 
 .user-name {
-  width: 100%;
-  text-align: center;
-  font-size: 85px; /* 140px */
+  font-size: 140px; /* 140px 85px*/
   font-weight: 700;
   margin: 0;
-  margin-top: 35px;
+  line-height: 110px;
+  padding: 10px;
+  transform: rotate(-5deg);
 }
-.profile-info-container {
+.last-name {
+  color: rgb(83, 77, 79);
+  background-color: rgb(240, 247, 138);
+}
+.first-name {
+  background-color: rgb(83, 77, 79);
+  color: white;
+  transform: rotate(-5deg);
+  margin-right: 2px;
+}
+.name-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 40px;
+  position: absolute;
+  z-index: 100;
+}
+.profile-info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  position: absolute;
+  bottom: 0px;
 }
 .profile-info {
-  position: absolute;
-  bottom: 120px;
-  left: 30px;
 }
 .profession-text {
   font-weight: 600;
@@ -88,7 +118,6 @@ body {
   margin-bottom: 8px;
 }
 .job-description {
-  width: 320px;
   color: #424242;
   margin-bottom: 18px;
 }
@@ -99,17 +128,23 @@ body {
   border-radius: 35px;
   border: solid 1px rgb(241, 241, 241);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  justify-content: center;
   width: 145px;
   padding: 6px 15px;
   font-weight: 500;
   font-size: 14px;
 }
+.profile-image {
+}
+.profile-photo {
+  width: 100%;
+  max-width: 630px;
+  z-index: 0;
+  margin-bottom: -40px;
+}
+
 .socials-container {
   flex-direction: column;
-  position: absolute;
-  bottom: 10px;
-  right: 30px;
-  margin-top: 200px;
 }
 .social {
   font-size: 12px;
@@ -118,21 +153,22 @@ body {
   font-weight: 500;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 20px;
   width: 100px;
   margin-bottom: 15px;
   justify-content: center;
-  box-shadow: 0px 0px 5px rgba(212, 212, 212, 0.1); 
+  box-shadow: 0px 0px 5px rgba(212, 212, 212, 0.1);
 }
 .social-img {
   width: 15px;
   margin-left: -20px;
 }
-.img-link{
-  width: 16px;
+.img-link {
   margin-left: -10px;
 }
 .img-insta {
-  width: 13px;
-  margin-left:4px;
+  margin-left: 2px;
+}
+
+@media (max-width: 768px) {
 }
