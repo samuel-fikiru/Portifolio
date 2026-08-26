@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: #ffffff;
+  background-color: #ffff;
   margin-bottom: 3000px;
 }
 .page1 {
@@ -31,6 +31,12 @@ body {
 }
 .nav-bar {
   padding: 20px 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 120;
 }
 .nav {
   font-weight: 600;
@@ -53,14 +59,6 @@ body {
   width: 10px;
 }
 
-.lets-talk-nav {
-  background-color: black;
-  color: #ffffff;
-  padding: 8px 15px;
-  border-radius: 35px;
-  border: solid 1px rgb(241, 241, 241);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
 .img-arrow {
   margin-left: 5px;
   width: 20px;
@@ -78,7 +76,7 @@ body {
   font-size: 140px; /* 140px 85px*/
   font-weight: 700;
   line-height: 110px;
-  padding: 10px;
+  padding: 10px 15px;
   transform: rotate(-5deg);
 }
 .last-name {
@@ -98,6 +96,7 @@ body {
   justify-content: center;
   position: absolute;
   z-index: 100;
+  margin-top: 150px;
 }
 .profile-info-container {
   display: grid;
