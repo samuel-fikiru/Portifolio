@@ -15,8 +15,7 @@ body {
   background-color: #ffff;
   margin-bottom: 3000px;
 }
-.page1 {
-  height: 100vh;
+.home {
   overflow: hidden;
 }
 .nav-bar,
@@ -114,7 +113,7 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-content: center;
-  padding: 0px 40px;
+  padding: 0px 30px;
 }
 .profile-info {
 }
@@ -236,4 +235,8 @@ body {
     font-size: 60px;
     padding: 0px 50px;
   }
+  .first-name {
+    margin-left: -40px;
+  }
 }
+
