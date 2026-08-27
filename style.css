@@ -1,11 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+--navy: #0F1F3D;
+--blue: #1D4ED8;
+--blue-light: #EFF6FF;
+--background: #FAF9F6;
+--text: #111827;
+--text-secondary: #475569;
+--border: #E2E8F0;
+--white: #FFFFFF;
+--success: #22C55E;  
+}
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
 section {
 }
 * {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 body,
@@ -17,7 +33,7 @@ a {
   outline: none;
 }
 body {
-  background-color: #ffff;
+  background-color: var(--background);
   margin-bottom: 3000px;
   width: 100%;
   overflow-x: hidden;
@@ -38,12 +54,6 @@ body {
 }
 .nav-bar {
   padding: 20px 40px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 120;
   height: 70px;
 }
 .nav {
@@ -65,10 +75,6 @@ body {
 
 .availability-nav {
   gap: 10px;
-  border-radius: 35px;
-  border: solid 1px rgb(245, 245, 245);
-  padding: 6px 10px;
-  box-shadow: 0 0 5px rgba(177, 175, 175, 0.1);
 }
 .availability-nav:hover {
   padding: 6px 10px;
@@ -93,21 +99,16 @@ body {
   padding: 10px 15px;
   transform: rotate(-5deg);
 }
-.last-name {
-  /*
-  color: rgb(241, 239, 240);
-  background-color: rgb(53, 53, 50); */
-  color: #17202A;
-  background-color: rgb(238, 238, 232);
-}
 .first-name {
-  /* background-color: rgb(128, 139, 238);
-  color: rgb(252, 251, 249); */
-  background-color: rgb(244, 245, 247);
-  color: #1E3A5F;
+  color: var(--navy);
   transform: rotate(-5deg);
   margin-right: 2px;
 }
+.last-name {
+  color: var(--white);
+  background-color: var(--navy);
+}
+
 .name-container {
   display: flex;
   flex-direction: row;
@@ -193,6 +194,7 @@ body {
   margin-left: 2px;
 }
 /* Media Query for home page */
+/*
 @media (max-width: 1250px) {
   .user-name {
     font-size: 110px;
@@ -247,6 +249,8 @@ body {
     margin-left: -40px;
   }
 }
+*/
+
 
 /* Project Section */
 #projects {
