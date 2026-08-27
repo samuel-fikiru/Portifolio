@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
+section {
+}
 * {
   font-family: Montserrat, sans-serif;
 }
@@ -37,6 +41,7 @@ body {
   left: 0;
   right: 0;
   z-index: 120;
+  height: 25px;
 }
 .nav {
   font-weight: 600;
@@ -58,9 +63,9 @@ body {
 .availability-nav {
   gap: 10px;
   border-radius: 35px;
-  border: solid 2px rgb(245, 245, 245);
+  border: solid 1px rgb(245, 245, 245);
   padding: 6px 10px;
-  box-shadow: 0 2px 10px rgba(187, 185, 185, 0.15);
+  box-shadow: 0 0 5px rgba(177, 175, 175, 0.1);
 }
 .availability-nav:hover {
   padding: 6px 10px;
@@ -74,12 +79,8 @@ body {
   width: 20px;
 }
 .name-container {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
-}
-.oulined-text {
-  width: 590px;
-  margin-top: -5px;
 }
 
 .user-name {
@@ -239,7 +240,9 @@ body {
     margin-left: -40px;
   }
 }
-
+#projects {
+  scroll-margin-top: 70px;
+}
 .page-title-container {
   display: flex;
   flex-direction: column;
