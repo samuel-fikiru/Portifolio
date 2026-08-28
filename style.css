@@ -52,23 +52,22 @@ body {
   justify-content: space-between;
 }
 .nav-bar {
-  padding: 20px 20px;
-  height: 70px;
+
 }
 .nav {
   font-weight: 600;
   font-size: 13px;
-  color: black;
+  color: var(--white);
   padding: 5px 10px;
   border-radius: 20px;
 }
-/*
+
 .nav:hover {
   color: #fff;
   background-color: rgb(128, 139, 238);
   padding: 5px 10px;
 }
-  */
+
 .count {
   opacity: 0.4;
   margin-left: 5px;
@@ -76,6 +75,7 @@ body {
 
 .availability-nav {
   gap: 10px;
+  color: var(--text);
 }
 .availability-nav:hover {
   padding: 6px 10px;
@@ -89,6 +89,23 @@ body {
 .ham-burger{
   background-color: var(--background);
   border: none;
+  display: block;
+}
+
+.hamburger-menu{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  right: 0;
+  top:0;
+  background-color: var(--text);
+  color: white;
+  padding: 30px;
+  transform: translateX(100%);
+  transition: 0.3s ease;
+  transform: translateX(0);
 }
 
 /*
