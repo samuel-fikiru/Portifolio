@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* Colors */
 :root{
 --navy: #0F1F3D;
 --blue: #1D4ED8;
@@ -11,9 +12,6 @@
 --white: #FFFFFF;
 --success: #22C55E;  
 }
-
-
-
 
 html {
   scroll-behavior: smooth;
@@ -28,10 +26,7 @@ body,
 p {
   margin: 0;
 }
-a {
-  text-decoration: none;
-  outline: none;
-}
+
 body, .html {
   background-color: var(--background);
   margin-bottom: 3000px;
@@ -42,15 +37,14 @@ body, .html {
   overflow: hidden;
 }
 
-.availability-nav,
-.lets-collab-btn,
-.socials-container,
-.social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+
+
+a {
+  text-decoration: none;
+  outline: none;
 }
+
+/* Nav bar / hambergur menu styles */
 .nav-bar {
   padding: 20px;
   display: grid;
@@ -78,6 +72,12 @@ body, .html {
   margin-left: 5px;
 }
 
+.availability-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .availability-nav {
   justify-content: left;
   gap: 10px;
@@ -124,14 +124,8 @@ body, .html {
 .hamburger-active{
   right: 0;
 }
-.ham-menu-disabled{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
 
+/* responsive hambergur/ defualt manu-navbar */
 @media (min-width:767px){
   .hamburger-menu{
     all: unset;
@@ -154,42 +148,66 @@ body, .html {
 }
 
 
-/*
-.img-arrow {
-  margin-left: 5px;
-  width: 20px;
-}
-.name-container {
-  margin-top: 40px;
-  width: 100%;
-}
 
-.user-name {
-  font-size: 140px; /* 140px 85px*/
-  font-weight: 700;
-  line-height: 110px;
-  padding: 10px 15px;
-  transform: rotate(-5deg);
+/* section 1 home page */
+.basic-profile-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
-.first-name {
-  color: var(--navy);
-  transform: rotate(-5deg);
-  margin-right: 2px;
+.profession-text {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-.last-name {
-  color: var(--white);
-  background-color: var(--navy);
-}
-
-.name-container {
+.username-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  z-index: 100;
-  margin-top: 150px;
-  margin-bottom: 30px;
 }
+.user-name {
+  font-size: 50px; 
+  font-weight: 700;
+}
+.first-name {
+  color: var(--navy);
+  margin-right: 15px;
+  font-size: 55px;
+}
+.last-name {
+  font-size: 47px;
+  color: var(--white);
+  padding: 0px 10px;
+  background-color: var(--navy);
+  transform: rotate(-5deg);
+  margin-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.lets-collab-btn,
+.socials-container,
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/*
 .profile-info-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -199,16 +217,15 @@ body, .html {
 }
 .profile-info {
 }
-.profession-text {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 8px;
-}
+
 .job-description {
   color: #424242;
   margin-bottom: 18px;
 }
-
+.img-arrow {
+  margin-left: 5px;
+  width: 20px;
+}
 .lets-collab-btn {
   background-color: black;
   color: #ffffff;
