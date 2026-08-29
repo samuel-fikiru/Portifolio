@@ -336,6 +336,28 @@ a {
 }
 
 /* Media Query for home page */
+@media (max-width: 415px) {
+  .first-name{
+    font-size: 32px;
+  }
+  .last-name{
+    font-size: 28px;
+  }
+  .what-i-do{
+    font-size: 25px;
+  }
+  .offer-request{
+    font-size: 18px;
+  }
+}
+@media (max-width: 527px) {
+  .first-name{
+    font-size: 45px;
+  }
+  .last-name{
+    font-size: 38px;
+  }
+}
 @media (min-width: 767px) {
   .img-and-socials {
     display: grid;
