@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Colors */
-:root{
---navy: #0F1F3D;
---blue: #1D4ED8;
---blue-light: #EFF6FF;
---background: #FAF9F6;
---text: #111827;
---text-secondary: #475569;
---border: #E2E8F0;
---white: #FFFFFF;
---success: #22C55E;  
+:root {
+  --navy: #0f1f3d;
+  --blue: #1d4ed8;
+  --blue-light: #eff6ff;
+  --background: #faf9f6;
+  --text: #111827;
+  --text-secondary: #475569;
+  --border: #e2e8f0;
+  --white: #ffffff;
+  --success: #22c55e;
 }
 
 html {
@@ -27,7 +27,8 @@ p {
   margin: 0;
 }
 
-body, .html {
+body,
+.html {
   background-color: var(--background);
   margin-bottom: 3000px;
   width: 100%;
@@ -36,8 +37,6 @@ body, .html {
 .home {
   overflow: hidden;
 }
-
-
 
 a {
   text-decoration: none;
@@ -55,7 +54,7 @@ a {
 .nav {
   font-weight: 600;
   font-size: 13px;
-  color: var(--white);  
+  color: var(--white);
   padding: 5px 10px;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -63,6 +62,7 @@ a {
 
 .nav:hover {
   text-decoration: underline;
+  text-underline-color:var(--white);
   text-underline-offset: 5px;
   transform: scale(1.05);
 }
@@ -89,45 +89,45 @@ a {
 .img-green-circle {
   width: 10px;
 }
-.img-hamburger{
-  width:25px;
+.img-hamburger {
+  width: 25px;
 }
-.ham-burger, .cross-btn{
+.ham-burger,
+.cross-btn {
   background-color: var(--background);
   border: none;
   text-align: right;
 }
-.cross-btn{
+.cross-btn {
   background-color: var(--text);
   z-index: 100;
   text-align: right;
   margin-left: auto;
   display: none;
-  
 }
-.img-cross{
+.img-cross {
   width: 25px;
 }
-.hamburger-menu{
+.hamburger-menu {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 250px;
   position: absolute;
-  right:-250px;
-  top:0;
+  right: -250px;
+  top: 0;
   background-color: var(--text);
   color: white;
   padding: 80px 30px;
   transition: right 0.3s ease;
 }
-.hamburger-active{
+.hamburger-active {
   right: 0;
 }
 
 /* responsive hambergur/ defualt manu-navbar */
-@media (min-width:767px){
-  .hamburger-menu{
+@media (min-width: 767px) {
+  .hamburger-menu {
     all: unset;
 
     display: flex;
@@ -136,18 +136,19 @@ a {
     justify-content: center;
     gap: 30px;
   }
-  .ham-burger{
+  .ham-burger {
     display: none;
   }
-  .cross-btn{
+  .cross-btn {
     display: none;
   }
-  .nav{
+  .nav {
     color: var(--text);
   }
+  .nav-bar:hover{
+    text-underline-color:var(--navy);
+  }
 }
-
-
 
 /* section 1 home page */
 .basic-profile-info-container {
@@ -165,13 +166,13 @@ a {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.username-container{
+.username-container {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .user-name {
-  font-size: 50px; 
+  font-size: 50px;
   font-weight: 700;
 }
 .first-name {
@@ -187,17 +188,6 @@ a {
   transform: rotate(-5deg);
   margin-top: -20px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .lets-collab-btn,
 .socials-container,
@@ -340,7 +330,6 @@ a {
 }
 */
 
-
 /* Project Section */
 #projects {
   scroll-margin-top: 70px;
@@ -434,7 +423,7 @@ a {
 }
 /* rgb(128, 139, 238) */
 
-.project-link:hover{
+.project-link:hover {
   color: rgb(241, 239, 240);
   background-color: rgb(53, 53, 50);
   box-shadow: 2px 2px 5px rgba(75, 74, 74, 0.068);
@@ -458,7 +447,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 @media (max-width: 820px) {
@@ -482,7 +470,6 @@ a {
   }
 }
 @media (max-width: 520px) {
-
 }
 @media (max-width: 480px) {
   .bg-big-text {
