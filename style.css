@@ -437,6 +437,7 @@ a {
   color: var(--white);
   background-color: rgb(17, 101, 150);
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .catagory:hover {
   color: var(--white);
@@ -502,10 +503,20 @@ a {
   font-weight: 500;
   font-size: 17px;
 }
-
+@media (min-width: 900px){
+  .bg-big-text{
+    font-size: 150px;
+  }
+}
 @media (min-width: 900px) {
   .selectd-works {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .bg-big-text{
+    font-size: 120px;
+  }
+  .headline-text{
+    margin-top: -40px;
   }
   .work-ethic {
     display: flex;
@@ -520,7 +531,13 @@ a {
   .selectd-works {
     grid-template-columns: 1fr;
   }
+  .bg-big-text{
+    font-size: 70px;
+  }
 }
 
 @media (max-width: 480px) {
+    .bg-big-text{
+    font-size: 50px;
+  }
 }
