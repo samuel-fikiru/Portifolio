@@ -66,13 +66,13 @@ body, .html {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-/*
+
 .nav:hover {
-  color: #fff;
-  background-color: rgb(128, 139, 238);
-  padding: 5px 10px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transform: scale(1.05);
 }
-*/
+
 .count {
   opacity: 0.6;
   margin-left: 5px;
@@ -103,6 +103,7 @@ body, .html {
   text-align: right;
   margin-left: auto;
   display: none;
+  
 }
 .img-cross{
   width: 25px;
