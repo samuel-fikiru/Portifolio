@@ -32,7 +32,7 @@ a {
   text-decoration: none;
   outline: none;
 }
-body {
+body, .html {
   background-color: var(--background);
   margin-bottom: 3000px;
   width: 100%;
