@@ -113,19 +113,15 @@ body, .html {
   height: 100%;
   width: 250px;
   position: absolute;
-  right: 0;
+  right:-250px;
   top:0;
   background-color: var(--text);
   color: white;
   padding: 80px 30px;
-  transform: translate3d(100%,0,0);
-  transition: transform 0.3s ease;
-
-  visibility: hidden;
+  transition: right 0.3s ease;
 }
 .hamburger-active{
-  visibility: visible;
-  transform: translateX(0,0,0);
+  right: 0;
 }
 .ham-menu-disabled{
   display: flex;
