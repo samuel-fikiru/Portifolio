@@ -126,11 +126,12 @@ a {
 .hamburger-menu {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 250px;
+
   position: absolute;
   right: -250px;
   top: 0;
+  height: 100vh;
+  width: 250px;
   background-color: var(--text);
   color: white;
   padding: 80px 30px;
@@ -144,6 +145,14 @@ a {
 
 /* responsive hambergur/ defualt manu-navbar */
 @media (min-width: 768px) {
+  .ham-burger {
+    display: none;
+  }
+
+  .cross-btn {
+    display: none;
+  }
+
   .hamburger-menu {
     all: unset;
 
@@ -152,14 +161,6 @@ a {
     align-items: center;
     justify-content: center;
     gap: 30px;
-  }
-
-  .ham-burger {
-    display: none;
-  }
-
-  .cross-btn {
-    display: none;
   }
 
   .nav {
@@ -442,7 +443,7 @@ a {
   padding: 8px 15px;
   border-radius: 5px;
   color: var(--white);
-    background-color: rgb(28, 68, 129);
+  background-color: rgb(28, 68, 129);
   margin-right: 10px;
   margin-bottom: 10px;
 }
