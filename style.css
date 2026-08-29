@@ -54,14 +54,13 @@ body {
 .nav-bar {
   padding: 20px;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 200px 1fr;
   align-items: center;
   justify-content: center;
 }
 .nav {
   font-weight: 600;
   font-size: 13px;
-  /* color: var(--text); */
   color: var(--white);  
   padding: 5px 10px;
   border-radius: 20px;
@@ -93,12 +92,21 @@ body {
 .img-hamburger{
   width:25px;
 }
-.ham-burger{
+.ham-burger, .cross-btn{
   background-color: var(--background);
   border: none;
   text-align: right;
 }
-
+.cross-btn{
+  background-color: var(--text);
+  z-index: 100;
+  text-align: right;
+  margin-left: auto;
+  display: none;
+}
+.img-cross{
+  width: 25px;
+}
 .hamburger-menu{
   display: flex;
   flex-direction: column;
@@ -109,7 +117,7 @@ body {
   top:0;
   background-color: var(--text);
   color: white;
-  padding: 30px;
+  padding: 80px 30px;
   transform: translateX(100%);
   transition: transform 0.3s ease;
 }
@@ -123,6 +131,27 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+@media (min-width:767px){
+  .hamburger-menu{
+    all: unset;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .ham-burger{
+    display: none;
+  }
+  .cross-btn{
+    display: none;
+  }
+  .nav{
+    color: var(--text);
+  }
 }
 
 
