@@ -562,3 +562,17 @@ a {
     font-size: 50px;
   }
 }
+
+
+.skill-section{
+  padding: 0px 30px;
+  margin-top: 30px;
+}
+.skill-text{
+  font-size: 100px;
+}
+.expertise-text{
+  text-align:center;
+  margin-top: -30px;
+}
+
