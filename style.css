@@ -430,7 +430,6 @@ a {
   width: 70%;
   max-width: 485px;
   line-height: 30px;
-  margin: 0px auto;
   margin-bottom: 30px;
   color: var(--text-secondary);
 }
@@ -485,14 +484,14 @@ a {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.demo{
+.demo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 3px;
 }
-.link-arrow{
+.link-arrow {
   background-color: #c7b683;
   width: 20px;
 }
@@ -538,6 +537,9 @@ a {
   .headline-text {
     margin-top: -40px;
   }
+  .headline-description {
+    margin: 0px auto;
+  }
   .introductory-container {
     display: flex;
     flex-direction: row;
@@ -546,7 +548,6 @@ a {
     margin-top: 20px;
   }
 }
-
 
 @media (max-width: 587px) {
   .selectd-works {
@@ -564,23 +565,23 @@ a {
 }
 
 /* Section 3 SKills */
-.skill-section{
+.skill-section {
   padding: 0px 30px;
   margin-top: 30px;
 }
-.skill-text{
+.skill-text {
   font-size: 100px;
 }
-.expertise-text{
-  text-align:center;
+.expertise-text {
+  text-align: center;
   margin-top: -30px;
 }
-.skills-container{
+.skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.skill{
+.skill {
   color: var(--navy);
   height: 140px;
   border: 2px solid rgba(65, 64, 64, 0.1);
@@ -591,10 +592,44 @@ a {
   justify-content: center;
   gap: 10px;
 }
-.skill-title{
+.skill-title {
   font-size: 17px;
-  font-weight:600;
+  font-weight: 600;
 }
-.img-skill{
+.img-skill {
   width: 60px;
+}
+.skill-section-footer{
+  background-color: var(--blue-light);
+}
+.skill-section-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.like-text{
+  font-size: 20px;
+  color: var(--navy);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.enjoy-text{
+  font-size: 17px;
+  margin-bottom:15px;
+  color: var(--text-secondary);
+  line-height: 25px;
+}
+.project-linker{
+  background-color: rgb(43, 89, 158);
+  color: var(--white);
+  font-weight: 500;
+  padding: 8px 5px;
+  width: 250px;
+  font-size: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
