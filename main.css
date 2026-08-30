@@ -17,9 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-}
-
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -36,13 +33,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
-.home-section {
-  overflow: hidden;
-  padding: 0px 30px;
-  scroll-margin-top: 100px;
-}
-
 a {
   text-decoration: none;
   outline: none;
