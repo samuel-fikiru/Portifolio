@@ -465,8 +465,8 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(151, 150, 150, 0.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.034);
   height: 420px;
   transition: transform 0.3s ease;
 }
