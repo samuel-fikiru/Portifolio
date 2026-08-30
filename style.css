@@ -416,7 +416,7 @@ a {
   color: rgba(206, 205, 205, 0.15);
   text-align: center;
 }
-.project-uniquenes {
+.headline-2 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -425,7 +425,7 @@ a {
   max-width: 550px;
   letter-spacing: -1px;
 }
-.descriptive-text {
+.headline-description {
   font-size: 21px;
   width: 70%;
   max-width: 485px;
@@ -538,9 +538,10 @@ a {
   .headline-text {
     margin-top: -40px;
   }
-  .work-ethic {
+  .introductory-container {
     display: flex;
     flex-direction: row;
+    gap: 100px;
     align-items: center;
     margin-top: 20px;
     padding: 0px 30px;
