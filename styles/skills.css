@@ -1,0 +1,133 @@
+
+/* Section 3 SKills */
+.skill-section {
+  padding: 0px 30px;
+  margin-top: 30px;
+  scroll-margin-top: 70px;
+}
+
+.expertise-text {
+  text-align: center;
+  margin-top: -30px;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.skill {
+  color: var(--navy);
+  height: 140px;
+  border: 2px solid rgba(65, 64, 64, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+.skill:hover {
+  transform: scale(1.08);
+}
+.skill-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+.img-skill {
+  width: 60px;
+}
+
+.skill-section-footer {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1000px;
+  overflow: hidden;
+  margin-top: 15px;
+  background-color: var(--blue-light);
+  padding: 15px 10px;
+}
+.img-avatar {
+  width: 100%;
+}
+.like-text {
+  font-size: 20px;
+  color: var(--navy);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.enjoy-text {
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+  line-height: 25px;
+}
+.project-linker {
+  background-color: rgb(43, 89, 158);
+  color: var(--white);
+  font-weight: 500;
+  width: 210px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-linker:hover {
+  background-color: var(--text);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+/* Prokect section responsive design */
+@media (min-width: 992px) {
+  .skill-section-footer {
+    margin: 15px auto 0px;
+    padding-right: 30px;
+  }
+  .additional-info-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .like-text,
+  .project-linker {
+    margin: 0px auto;
+  }
+}
+@media (min-width: 768px) {
+  .expertise-text {
+    margin-top: -40px;
+  }
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skill-section-footer {
+    grid-template-columns: 250px 1fr;
+  }
+  .skill-text {
+    font-size: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .skill-section-footer {
+    grid-template-columns: 200px 1fr;
+  }
+  .skill-text {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 515px) {
+  .skill-section-footer {
+    grid-template-columns: 150px 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .skill-text {
+    font-size: 70px;
+  }
+}
