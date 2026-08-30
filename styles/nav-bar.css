@@ -49,6 +49,9 @@
 
 .img-green-circle {
   width: 10px;
+  height: 10px;
+  background-color: var(--success);
+  border-radius: 15px;
 }
 
 .img-hamburger {
