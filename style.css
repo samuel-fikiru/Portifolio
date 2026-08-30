@@ -411,7 +411,7 @@ a {
   margin-top: -25px;
 }
 .bg-big-text {
-  font-size: 85px;
+  font-size: 90px;
   font-weight: 600;
   color: rgba(206, 205, 205, 0.15);
   text-align: center;
@@ -570,9 +570,7 @@ a {
   margin-top: 30px;
   scroll-margin-top: 70px;
 }
-.skill-text {
-  font-size: 100px;
-}
+
 .expertise-text {
   text-align: center;
   margin-top: -30px;
@@ -594,7 +592,7 @@ a {
   gap: 10px;
   transition: transform 0.3s ease;
 }
-.skill:hover{
+.skill:hover {
   transform: scale(1.08);
 }
 .skill-title {
@@ -617,10 +615,10 @@ a {
   background-color: var(--blue-light);
   padding: 15px 10px;
 }
-.img-avatar{
+.img-avatar {
   width: 100%;
 }
-.additional-info-container{
+.additional-info-container {
 }
 .like-text {
   font-size: 20px;
@@ -646,57 +644,57 @@ a {
   align-items: center;
   justify-content: center;
 }
-.project-linker:hover{
+.project-linker:hover {
   background-color: var(--text);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
-@media (min-width:1200px){
-    .skill-text{
-    font-size: 160px;
-  }
-}
-@media (min-width:992px){
-  .skill-section-footer{
+/* Prokect section responsive design */
+@media (min-width: 992px) {
+  .skill-section-footer {
     margin: 15px auto 0px;
     padding-right: 30px;
   }
-    .skill-text{
-    font-size: 150px;
-  }
-  .additional-info-container{
+  .additional-info-container {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
   }
-  .like-text, .project-linker{
+  .like-text,
+  .project-linker {
     margin: 0px auto;
   }
 }
 @media (min-width: 768px) {
-  .skill-text{
-    font-size: 130px;
-  }
-  .expertise-text{
+  .expertise-text {
     margin-top: -40px;
   }
   .skills-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .skill-section-footer{
+  .skill-section-footer {
     grid-template-columns: 250px 1fr;
   }
-
+  .skill-text {
+    font-size: 140px;
+  }
 }
-
 @media (max-width: 600px) {
-  .skill-section-footer{
+  .skill-section-footer {
     grid-template-columns: 200px 1fr;
+  }
+  .skill-text {
+    font-size: 90px;
   }
 }
 
 @media (max-width: 515px) {
-  .skill-section-footer{
+  .skill-section-footer {
     grid-template-columns: 150px 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .skill-text {
+    font-size: 70px;
   }
 }
