@@ -433,7 +433,7 @@ a {
   margin-bottom: 30px;
   color: var(--text-secondary);
 }
-.project-catagory {
+.catagory-bar {
   margin-bottom: 15px;
 }
 .catagory {
@@ -564,7 +564,7 @@ a {
   }
 }
 
-
+/* Section 3 SKills */
 .skill-section{
   padding: 0px 30px;
   margin-top: 30px;
