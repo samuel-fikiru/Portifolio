@@ -2,7 +2,7 @@
 .skill-section {
   padding: 0px 30px;
 }
-.contact-info-container{
+.contact-info-container {
   margin-bottom: 20px;
   max-width: 490px;
 }
@@ -86,10 +86,13 @@
   border-radius: 6px;
   width: 100%;
 }
-.message-input{
+.user-input:focus{
+  outline: 1px solid var(--text);
+}
+.message-input {
   height: 100px;
 }
-.message-input::placeholder{
+.message-input::placeholder {
   margin-bottom: auto;
 }
 .user-input::placeholder {
@@ -117,13 +120,13 @@
   width: 25px;
 }
 
-@media (min-width:768px){
-  .contact-info-input{
+@media (min-width: 768px) {
+  .contact-info-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .form-container{
+  .form-container {
     margin: 0px auto;
   }
 }
