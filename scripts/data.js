@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
     {
         title:'Weather App',
         description:'Weather forecast based on location.',
