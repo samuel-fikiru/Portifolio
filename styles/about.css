@@ -62,8 +62,8 @@
 .img-accom {
   width: 45px;
   background-color: var(--text);
-  padding: 8px 10px;
-  border-radius: 5px;
+  padding: 10px 10px;
+  border-radius: 15px;
 }
 .acc-title {
   font-weight: 600;

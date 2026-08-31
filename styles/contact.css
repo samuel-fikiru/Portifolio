@@ -2,7 +2,36 @@
 .skill-section {
   padding: 0px 30px;
 }
-.contact-headline{
-    margin-top: -10px;
-    font-size: 18px;
+.contact-headline {
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+/* contact-information */
+.contact-information {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-contact {
+  width: 40px;
+  background-color: var(--text);
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+.contact-type {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.contact-adress {
+  font-size: 15px;
+  color: var(--text-secondary);
 }
