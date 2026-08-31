@@ -64,6 +64,7 @@
   margin-bottom: 15px;
   color: var(--text-secondary);
   line-height: 25px;
+  max-width: 490px;
 }
 .project-linker {
   background-color: rgb(43, 89, 158);
