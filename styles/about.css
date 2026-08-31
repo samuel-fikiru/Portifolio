@@ -1,0 +1,28 @@
+/* Section 4 About Me */
+
+.about-section {
+  padding: 0px 30px;
+  margin-top: 30px;
+  scroll-margin-top: 70px;
+}
+.headline-text {
+  text-align: center;
+  margin-top: -40px;
+}
+.headline-description{
+}
+.dwnld-cv-btn {
+  color: var(--white);
+  background-color: rgb(28, 68, 129);
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 10px;
+  font-weight: 500;
+}
+.img-dwnld {
+  width: 20px;
+}
