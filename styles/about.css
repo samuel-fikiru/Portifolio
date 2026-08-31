@@ -1,5 +1,4 @@
 /* Section 4 About Me */
-
 .about-section {
   padding: 0px 30px;
   margin-top: 30px;
@@ -10,8 +9,8 @@
   margin-top: -40px;
 }
 .headline-description {
-    margin: 0;
-    margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .dwnld-cv-btn {
@@ -58,25 +57,62 @@
   padding: 8px 10px;
   border-radius: 5px;
 }
-.acc-title{
+.acc-title {
   font-weight: 600;
   font-size: 17px;
   margin-bottom: 5px;
 }
-.acc-numbered{
+.acc-numbered {
   font-size: 15px;
   color: var(--text-secondary);
   white-space: nowrap;
 }
-.journey-container{
-    margin-top: 30px;
+.journey-container {
+  margin-top: 30px;
 }
-.journey-headline{
-    margin-bottom: 15px;
+.journey-headline {
+  margin-bottom: 15px;
 }
-.my-journey-text{
-    font-size: 16px;
-    width: 100%;
+.my-journey-text {
+  font-size: 16px;
+  width: 100%;
 }
 
 /* code-infos */
+.code-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+}
+.code-info {
+  border: solid 2px rgba(128, 126, 126, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  height: 180px; 
+}
+.img-code-container {
+  background-color: var(--text);
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.img-code {
+  width: 25px;
+}
+.info-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.info-description {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px 0px;
+  width: 100%;
+}
