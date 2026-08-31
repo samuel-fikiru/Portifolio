@@ -110,6 +110,7 @@
   font-weight: 500;
   color: var(--white);
   background-color: var(--navy);
+  cursor: pointer;
 }
 .send-btn:hover {
   background-color: var(--text);

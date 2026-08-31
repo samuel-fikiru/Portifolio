@@ -25,6 +25,7 @@
   gap: 10px;
   font-weight: 500;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 .dwnld-cv-btn:hover {
   background-color: var(--text);
