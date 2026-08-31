@@ -8,6 +8,11 @@
 }
 
 /* contact-information */
+.contact-informations-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .contact-information {
   display: flex;
   align-items: center;
@@ -34,4 +39,11 @@
 .contact-adress {
   font-size: 15px;
   color: var(--text-secondary);
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
