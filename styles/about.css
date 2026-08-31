@@ -9,7 +9,9 @@
   text-align: center;
   margin-top: -40px;
 }
-.headline-description{
+.headline-description {
+    margin: 0;
+    margin-bottom: 30px;
 }
 .dwnld-cv-btn {
   color: var(--white);
@@ -25,4 +27,43 @@
 }
 .img-dwnld {
   width: 20px;
+}
+
+.accomplitions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 20px;
+  max-width: 550px;
+  margin-top: 20px;
+  border: 2px solid rgba(128, 126, 126, 0.1);
+  border-radius: 10px;
+}
+.accomplition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-accomp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-accom {
+  width: 45px;
+  background-color: rgb(235, 241, 252);
+  padding: 10px;
+  border-radius: 5px;
+}
+.acc-title{
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.acc-numbered{
+  font-size: 15px;
+  color: var(--text-secondary);
+  white-space: nowrap;
 }

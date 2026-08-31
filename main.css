@@ -29,7 +29,6 @@ p {
 
 body {
   background-color: var(--background);
-  margin-bottom: 3000px;
   width: 100%;
   overflow-x: hidden;
 }
