@@ -2,6 +2,9 @@
 .skill-section {
   padding: 0px 30px;
 }
+.contact-info-container{
+  margin-bottom: 20px;
+}
 .contact-headline {
   margin-top: -10px;
   font-size: 18px;
@@ -49,11 +52,11 @@
 }
 
 /* Forms */
-.form-container{
-    padding: 20px 20px;
-    border:solid 1px rgba(173, 173, 173, 0.5) ;
-    border-radius: 15px;
-    background-color: var(--white);
+.form-container {
+  padding: 20px 20px;
+  border: solid 1px rgba(173, 173, 173, 0.5);
+  border-radius: 15px;
+  background-color: #fffefa
 }
 .send-msg-text {
   font-size: 20px;
@@ -64,32 +67,50 @@
   font-weight: 500;
   margin-bottom: 10px;
 }
-.sender-data{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 15px;
+.sender-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 15px;
 }
-.sender-data, .message-subject, .message{
+.sender-data,
+.message-subject,
+.message {
   margin-bottom: 20px;
 }
 .user-input {
-  padding: 10px 15px; 
+  padding: 10px 15px;
   border: 1px solid rgba(221, 220, 220, 0.5);
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
 }
-.user-input::placeholder{
-    color: rgba(0, 0, 0, 0.425);
+.message-input{
+  height: 150px;
 }
-.send-btn{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border:none;
-    border-radius: 5px;
+.message-input::placeholder{
+  margin-bottom: auto;
 }
-.send-icon{
-    width: 25px;
+.user-input::placeholder {
+  color: rgba(0, 0, 0, 0.425);
+}
+.send-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: rgb(28, 68, 129);
+}
+.send-btn:hover {
+  background-color: var(--text);
+  transform: scale(1.02);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+.send-icon {
+  width: 25px;
 }
