@@ -97,9 +97,7 @@
 .hamburger-active {
   right: 0;
 }
-/* 
 
- */
 /* responsive hambergur/ defualt manu-navbar */
 @media (min-width: 768px) {
   .hamburger-menu {
