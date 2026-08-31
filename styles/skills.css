@@ -28,7 +28,7 @@
 }
 .skill:hover {
   transform: scale(1.02);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
 }
 .skill-title {
   font-size: 17px;
