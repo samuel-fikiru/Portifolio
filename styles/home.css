@@ -104,11 +104,13 @@
   font-size: 14px;
   width: 45%;
   font-size: 15px;
+  transition: transform 0.2s ease;
 }
 
 .lets-collab-btn:hover {
   background-color: var(--text);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
 /* img-and-socials */
 /* profile-image */
