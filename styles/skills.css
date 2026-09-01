@@ -94,10 +94,27 @@
   .skill-text {
     font-size: 70px;
   }
+  .img-avatar{
+    display:none;
+  }
+  .skill-section-footer{
+    display:flex;
+  }
 }
 @media (max-width: 515px) {
   .skill-section-footer {
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 130px 1fr;
+  }
+  .img-avatar{
+    margin-left: -20px;
+  }
+  .project-linker{
+    width: 90%;
+    height:40px;
+    text-align:center;
+  }
+  .img-arrow{
+    display:none;
   }
 }
 @media (max-width: 600px) {
