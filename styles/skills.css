@@ -7,10 +7,7 @@
 .skill-section-headline-2{
   margin-bottom: auto;
 }
-.expertise-text {
-  text-align: center;
-  margin-top: -30px;
-}
+
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,9 +88,6 @@
 /* Skill section responsive design */
 
 @media (max-width: 480px) {
-  .skill-text {
-    font-size: 70px;
-  }
   .img-avatar{
     display:none;
   }
@@ -121,9 +115,6 @@
   .skill-section-footer {
     grid-template-columns: 200px 1fr;
   }
-  .skill-text {
-    font-size: 90px;
-  }
   .contact-informations-container{
     display:flex;
     flex-direction: column;
@@ -139,17 +130,11 @@
   }
 }
 @media (min-width: 768px) {
-  .expertise-text {
-    margin-top: -40px;
-  }
   .skills-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .skill-section-footer {
     grid-template-columns: 250px 1fr;
-  }
-  .skill-text {
-    font-size: 140px;
   }
 }
 @media (min-width: 992px) {
