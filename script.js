@@ -28,8 +28,9 @@ humbergurBtn.addEventListener("click", () => {
 const projectCatagoryBar = document.querySelector(".js-project-catagory-bar");
 const projectsContainer = document.querySelector(".selectd-works");
 const catagoryBars = document.querySelectorAll(".js-project-catagory-bar .catagory");
+const projectCount = document.querySelector('.js-project-count');
 
-
+projectCount.textContent = `[${projectData.length}]`;
 // catagory figures
 projectCatagoryBar.addEventListener("click", (e) => {
   if (e.target.classList.contains("catagory")) {
