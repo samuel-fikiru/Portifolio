@@ -107,6 +107,19 @@
   .skill-text {
     font-size: 90px;
   }
+  .contact-informations-container{
+    display:flex;
+    flex-direction: column;
+  }
+  .contact-informations{
+    margin-right: auto;
+  }
+  .contact-section-socials-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: auto;
+    margin-top: 10px;
+  }
 }
 @media (min-width: 768px) {
   .expertise-text {

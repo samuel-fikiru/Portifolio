@@ -125,7 +125,7 @@
   width: 80%;
 }
 
-.socials-container {
+.home-section-socials-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -186,8 +186,11 @@
   .offer-request {
     font-size: 18px;
   }
-  .socials-container {
-    margin-left: -20px;
+  .home-section-socials-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 527px) {
@@ -212,7 +215,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-  .socials-container {
+  .home-section-socials-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
