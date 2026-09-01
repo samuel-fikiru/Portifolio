@@ -85,6 +85,10 @@ function renderProjects(data){
 
 const skillsCatagory = document.querySelector('.js-skill-catagory-bar');
 const skillsContainer = document.querySelector('.js-skills-container');
+const skillCount = document.querySelector('.js-skill-count');
+
+
+skillCount.textContent = `[${skillData.length}]`;
 
 
 skillsCatagory.addEventListener("click", (e) => {
