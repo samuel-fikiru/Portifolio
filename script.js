@@ -84,11 +84,34 @@ function renderProjects(data){
 
 
 const skillsCatagory = document.querySelector('.js-skill-catagory-bar');
+const skillsContainer = document.querySelector('.js-skills-container');
 
 
 skillsCatagory.addEventListener("click", (e) => {
   if (e.target.classList.contains("catagory")) {
     console.log(e.target.textContent)
+    filterSkills(e.target.textContent)
   }
 });
-console.log(skillData);
+
+filterSkills('Frontend')
+function filterSkills(catagory){
+    const filteredSkills = skillData.filter((skill) => {
+        return skill.catagory===catagory;
+    });
+    renderSkills(filteredSkills);
+}
+
+function renderSkills(data){
+    let skillsHTML = ``;
+    data.forEach((d) => {
+        const skill = `
+              <div class="skill">
+                <img src="${d.iconPath}" alt="" class="img-skill">
+                <p class="skill-title">${d.title}</p>
+              </div>
+        `;
+        skillsHTML += skill;
+    });
+    skillsContainer.innerHTML = skillsHTML;
+}
