@@ -50,3 +50,47 @@ export const projects = [
         type:'Experiments'
     },
 ]
+
+export const skills = [
+    {
+        title:'HTML5',
+        iconPath:'images/skills/html-5.svg',
+        catagory:'frontend'
+    },{
+        title:'CSS3',
+        iconPath:'images/skills/css-3.svg',
+        catagory:'frontend'
+    },{
+        title:'Javascript',
+        iconPath:'images/skills/javascript.svg',
+        catagory:'frontend'
+    },{
+        title:'Responsive Design',
+        iconPath:'images/skills/responsive.svg',
+        catagory:'frontend'
+    },{
+        title:'C++',
+        iconPath:'images/skills/cpp.svg',
+        catagory:'programming'
+    },{
+        title:'Java',
+        iconPath:'images/skills/java.svg',
+        catagory:'programming'
+    },{
+        title:'OOP',
+        iconPath:'images/skills/oop.svg',
+        catagory:'programming'
+    },{
+        title:'DSA & Algorithms',
+        iconPath:'images/skills/dsa-algorithm.svg',
+        catagory:'programming'
+    },{
+        title:'Database Fundamental',
+        iconPath:'images/skills/database.svg',
+        catagory:'tool'
+    },{
+        title:'GIthub',
+        iconPath:'images/skills/github.svg',
+        catagory:'tool'
+    },
+]
