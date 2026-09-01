@@ -83,22 +83,27 @@ function renderProjects(data){
 }
 
 
-const skillsCatagory = document.querySelector('.js-skill-catagory-bar');
 const skillsContainer = document.querySelector('.js-skills-container');
 const skillCount = document.querySelector('.js-skill-count');
+const skillsCatagory = document.querySelector('.js-skill-catagory-bar');
+const skillCatagoryBars = document.querySelectorAll(".js-skill-catagory-bar .catagory");
 
 
 skillCount.textContent = `[${skillData.length}]`;
 
-
+// catagory event handler
 skillsCatagory.addEventListener("click", (e) => {
   if (e.target.classList.contains("catagory")) {
-    console.log(e.target.textContent)
-    filterSkills(e.target.textContent)
+    filterSkills(e.target.textContent);
+    skillCatagoryBars.forEach((catagory) => {
+        catagory.classList.remove('clicked')
+    });
+    e.target.classList.add('clicked');
   }
 });
 
 filterSkills('Frontend')
+// filter skill based on catagory
 function filterSkills(catagory){
     const filteredSkills = skillData.filter((skill) => {
         return skill.catagory===catagory;
@@ -106,6 +111,7 @@ function filterSkills(catagory){
     renderSkills(filteredSkills);
 }
 
+// render skill data
 function renderSkills(data){
     let skillsHTML = ``;
     data.forEach((d) => {

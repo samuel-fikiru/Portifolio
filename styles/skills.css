@@ -85,7 +85,7 @@
   transform: scale(1.02);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
-/* Prokect section responsive design */
+/* Skill section responsive design */
 @media (min-width: 992px) {
   .skill-section-footer {
     margin: 15px auto 0px;
@@ -100,6 +100,9 @@
   .like-text,
   .project-linker {
     margin: 0px auto;
+  }
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media (min-width: 768px) {
