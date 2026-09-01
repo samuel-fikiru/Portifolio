@@ -55,6 +55,11 @@
   transform: scale(1.02);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
+.clicked {
+  background-color: var(--navy);
+  transform: scale(1.01);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
 .selectd-works {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -27,12 +27,17 @@ humbergurBtn.addEventListener("click", () => {
 
 const projectCatagoryBar = document.querySelector(".js-project-catagory-bar");
 const projectsContainer = document.querySelector(".selectd-works");
+const catagoryBars = document.querySelectorAll(".js-project-catagory-bar .catagory");
+
 
 // catagory figures
 projectCatagoryBar.addEventListener("click", (e) => {
   if (e.target.classList.contains("catagory")) {
-    console.log(e.target.textContent);
     filterProjects(e.target.textContent);
+    catagoryBars.forEach((catagory) => {
+        catagory.classList.remove('clicked')
+    });
+    e.target.classList.add('clicked');
   }
 });
 
@@ -74,5 +79,4 @@ function renderProjects(data){
         projectHTML += project;
     });
     projectsContainer.innerHTML=projectHTML;
-    console.log(projectHTML);
 }
