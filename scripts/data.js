@@ -55,42 +55,42 @@ export const skills = [
     {
         title:'HTML5',
         iconPath:'images/skills/html-5.svg',
-        catagory:'frontend'
+        catagory:'Frontend'
     },{
         title:'CSS3',
         iconPath:'images/skills/css-3.svg',
-        catagory:'frontend'
+        catagory:'Frontend'
     },{
         title:'Javascript',
         iconPath:'images/skills/javascript.svg',
-        catagory:'frontend'
+        catagory:'Frontend'
     },{
         title:'Responsive Design',
         iconPath:'images/skills/responsive.svg',
-        catagory:'frontend'
+        catagory:'Frontend'
     },{
         title:'C++',
         iconPath:'images/skills/cpp.svg',
-        catagory:'programming'
+        catagory:'Programing'
     },{
         title:'Java',
         iconPath:'images/skills/java.svg',
-        catagory:'programming'
+        catagory:'Programing'
     },{
         title:'OOP',
         iconPath:'images/skills/oop.svg',
-        catagory:'programming'
+        catagory:'Programing'
     },{
         title:'DSA & Algorithms',
         iconPath:'images/skills/dsa-algorithm.svg',
-        catagory:'programming'
+        catagory:'Programing'
     },{
         title:'Database Fundamental',
         iconPath:'images/skills/database.svg',
-        catagory:'tool'
+        catagory:'Tools & Database'
     },{
         title:'GIthub',
         iconPath:'images/skills/github.svg',
-        catagory:'tool'
+        catagory:'Tools & Database'
     },
 ]

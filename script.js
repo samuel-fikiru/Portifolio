@@ -1,4 +1,4 @@
-import { projects as projectData } from "./scripts/data.js";
+import { projects as projectData, skills as skillData } from "./scripts/data.js";
 
 const humbergerMenu = document.querySelector(".hamburger-menu");
 const humbergurBtn = document.querySelector(".humbergur-btn");
@@ -81,3 +81,14 @@ function renderProjects(data){
     });
     projectsContainer.innerHTML=projectHTML;
 }
+
+
+const skillsCatagory = document.querySelector('.js-skill-catagory-bar');
+
+
+skillsCatagory.addEventListener("click", (e) => {
+  if (e.target.classList.contains("catagory")) {
+    console.log(e.target.textContent)
+  }
+});
+console.log(skillData);
