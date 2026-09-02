@@ -125,3 +125,20 @@ function renderSkills(data){
     });
     skillsContainer.innerHTML = skillsHTML;
 }
+
+
+
+const contactForm = document.querySelector('.js-form-container');
+
+contactForm.addEventListener('submit', function sendEmail(event){
+  event.preventDefault();
+
+  const userName = document.querySelector('.js-user-name').value;
+  const userEmail = document.querySelector('.js-user-email').value;
+  const emailSubject = document.querySelector('.js-email-subject').value;
+  const message = document.querySelector('.js-user-message').value;
+
+  const body = `Name: ${userName}\nEmail: ${userEmail}\n\n${message}`;
+
+  window.location.href = `mailto:smfikiru@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(body)}`;
+})

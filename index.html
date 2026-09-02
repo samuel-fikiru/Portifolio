@@ -318,33 +318,33 @@
         </div>
 
       </div>
-      <div class="form-container">
+      <form class="form-container js-form-container">
         <p class="headline-2 send-msg-text">Send me message</p>
         <div class="sender-data">
           <div class="sender-name">
             <p class="input-headlines">Your Name</p>
-            <input class="user-input js-user-input" type="text" placeholder="John demo">
+            <input class="user-input js-user-name" type="text" placeholder="John demo" required>
 
           </div>
           <div class="sender-email">
             <p class="input-headlines">Your Email</p>
-            <input class="user-input js-user-input" type="text" placeholder="john@example.com">
+            <input class="user-input js-user-email" type="text" placeholder="john@example.com" required>
           </div>
         </div>
         <div class="message-subject">
           <p class="input-headlines">Subject</p>
-          <input class="user-input js-user-input" type="text" placeholder="How can i help you?">
+          <input class="user-input js-email-subject" type="text" placeholder="How can i help you?" required>
         </div>
         <div class="message">
           <p class="input-headlines">Message</p>
-          <textarea class="user-input message-input js-user-input" type="text"
-            placeholder="Write your message here..."></textarea>
+          <textarea class="user-input message-input js-user-message" type="text"
+            placeholder="Write your message here..." required></textarea>
         </div>
-        <button class="send-btn">
+        <button class="send-btn" type="submit">
           <p>Send Message</p>
           <img src="images/icons/send.png" alt="" class="send-icon">
         </button>
-      </div>
+      </form>
     </div>
   </div>
 
