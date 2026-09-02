@@ -141,4 +141,9 @@ contactForm.addEventListener('submit', function sendEmail(event){
   const body = `Name: ${userName}\nEmail: ${userEmail}\n\n${message}`;
 
   window.location.href = `mailto:smfikiru@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(body)}`;
+
+  userName.value='';
+  userEmail.value=''
+  emailSubject.value='';
+  message.value='';
 })
