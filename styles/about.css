@@ -13,21 +13,23 @@
   margin-bottom: 30px;
 }
 
-.dwnld-cv-btn {
+.dwnld-cv {
   color: var(--white);
   background-color: rgb(28, 68, 129);
-  border: none;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
   gap: 10px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
+  width: 70%;
+  max-width: 230px;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
-.dwnld-cv-btn:hover {
+.dwnld-cv:hover {
   background-color: var(--text);
   transform: scale(1.02);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
