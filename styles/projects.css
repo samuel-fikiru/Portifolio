@@ -170,3 +170,8 @@
   }
 }
 
+@media (min-width:1200px){
+.selectd-works {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
